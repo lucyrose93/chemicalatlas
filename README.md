@@ -43,5 +43,5 @@ The project is in its early stages. We held a [workshop](./workshop) on June 6, 
 
 ## 📢 License
 
-This project is licensed under the [CC BY-NC-ND 4.0] Licence (https://creativecommons.org/licenses/by-nc-nd/4.0/). Attribution is required and other restrictions apply.
+This project is licensed under the [CC BY-NC-ND 4.0 Licence](https://creativecommons.org/licenses/by-nc-nd/4.0/). Attribution is required and other restrictions apply.
 Last updated: June 9, 2025.
