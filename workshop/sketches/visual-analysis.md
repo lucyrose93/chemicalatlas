@@ -15,7 +15,7 @@ This report synthesizes core visual motifs and conceptual models drawn from 20 h
 
 ### 🪐 **Globes + Circular Maps**
 - **Earth/Planet Shapes**: Multiple sketches feature Earth-like globes or amorphous maps with embedded points.
-- **Interpretation**: Signals scale (planetary), universal relevance, or environmental reach.
+- **Interpretation**: Signals scale (planetary) and place-based stories.
 - **Common Uses**: Landing page visuals, thematic overviews.
 
 ### 🧭 **Contours + Topographies**
@@ -69,5 +69,3 @@ This report synthesizes core visual motifs and conceptual models drawn from 20 h
 - **Multi-scalar**: Enable zooming in/out—from molecular detail to global impact.
 - **Participatory**: Design with space for user-contributed stories, testimonies, or data.
 
-
-*Compiled from 20 sketches by workshop participants (June 2025).*
