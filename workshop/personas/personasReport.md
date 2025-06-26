@@ -1,15 +1,17 @@
 # 📊 Chemical Atlas User Personas – Key Trends Report
 
+![Persona Groups Overlap](personasVenn.png)
+
+## 🎯 Overview
+
+Each member of the group created a user persona using a predefined template. While these personas were not based on empirical data, they served as simplified archetypes that revealed assumptions we held about potential users of the chemical atlas. This process allowed us to identify commonly held ideas within the group and develop a more targeted approach to defining the project scope.
+
 ## 👥 Roles and Backgrounds
 
 - **Broader Trends**:
   - A mix of **institutional (government, EU policymakers)** and **grassroots (parents, teachers, campaigners)** roles.
   - Several users are **community stakeholders** concerned with **environmental justice**.
   - Backgrounds range from **policy and environmental science** to **non-expert but civically active individuals**.
-
-## 🗺️ Persona Group Visualization
-
-![Persona Groups Overlap](personasVenn.png)
 
 ## 🎯 Goals
 
