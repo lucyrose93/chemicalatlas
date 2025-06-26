@@ -3,9 +3,7 @@
 ## 🎯 Overview
 
 Each member of the group created a user persona using a predefined template. While these personas were not based on empirical data, they served as simplified archetypes that revealed assumptions we held about potential users of the chemical atlas. This process allowed us to identify commonly held ideas within the group and develop a more targeted approach to defining the project scope.
-
 ![Persona Groups Overlap](personasVenn.png)
-
 ## 👥 Roles and Backgrounds
 
 - **Broader Trends**:
