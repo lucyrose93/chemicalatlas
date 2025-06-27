@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "To cite Chemical Atlas, you can reference the GitHub repository or Workshop Report on Zenodo."
+authors:
+  - family-names: Sabin
+    given-names: Lucy
+    orcid: https://orcid.org/0000-0001-9682-196X
+title: "Chemical Atlas"
+version: 1.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.15755788
+date-released: 2025-06-27
