@@ -38,7 +38,6 @@ The project is in its early stages. We held a [workshop](./workshop) on June 6, 
 
 ```bash
 /workshop/         # powerpoints, notes, resources June 6
-/docs/             # Project documentation
 ```
 
 ## 📢 License
