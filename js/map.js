@@ -77,7 +77,7 @@ Promise.all([
       caseContent.appendChild(btnHtml);
 
       btnHtml.addEventListener('click', () => {
-        window.open(`../case-study.html?id=${cs.id}`, '_blank');
+        window.open(`./case-study.html?id=${cs.id}`, '_blank');
       });
 
       panel.style.display = 'block';
