@@ -28,18 +28,22 @@ toggleBtn.addEventListener('click', () => {
     return [...new Set(arr.filter(Boolean))].sort();
   }
 
-  // Render case study cards
-  function renderCards(items) {
+    function renderCards(items) {
   cardsEl.innerHTML = '';
   if (items.length === 0) {
     cardsEl.innerHTML = '<p>No case studies match your filters.</p>';
     return;
   }
   items.forEach(cs => {
+    const thumbnailHtml = cs.images && cs.images.length > 0
+      ? `<img src="${cs.images[0]}" alt="${cs.title} thumbnail" style="width: 100%; max-height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 0.2rem;">`
+      : '';
+
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer">${cs.title}</a></h3>
+      ${thumbnailHtml}
+      <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer" style="text-decoration:underline">${cs.title}</a></h3>
       <p><strong>Topic:</strong> ${cs.topic}</p>
       <p><strong>Scale:</strong> ${cs.scale}</p>
       <p><strong>Knowledge Area:</strong> ${cs.knowledge_area}</p>
@@ -47,6 +51,26 @@ toggleBtn.addEventListener('click', () => {
     cardsEl.appendChild(card);
   });
 }
+
+  // Render case study cards
+//  function renderCards(items) {
+//  cardsEl.innerHTML = '';
+//  if (items.length === 0) {
+//    cardsEl.innerHTML = '<p>No case studies match your filters.</p>';
+//    return;
+//  }
+//  items.forEach(cs => {
+//    const card = document.createElement('div');
+//    card.className = 'card';
+//    card.innerHTML = `
+//      <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer">${cs.title}</a></h3>
+//      <p><strong>Topic:</strong> ${cs.topic}</p>
+//      <p><strong>Scale:</strong> ${cs.scale}</p>
+//      <p><strong>Knowledge Area:</strong> ${cs.knowledge_area}</p>
+//    `;
+//    cardsEl.appendChild(card);
+//  });
+//}
 
   // Generate checkbox inputs for filter groups
   function createCheckboxFilters(container, name, options) {
