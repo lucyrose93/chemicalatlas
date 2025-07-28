@@ -61,7 +61,7 @@ h2, h3, h4, h5, h6 {
 
 .navbar .menu {
     display: flex;
-                gap: 1rem;
+    gap: 1rem;
 }
 
 .navbar a {
@@ -85,7 +85,8 @@ h2, h3, h4, h5, h6 {
 
     .navbar .menu.active {
         display: flex;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .navbar-toggle {
