@@ -29,6 +29,7 @@
         }
 
         .navbar-toggle {
+            position: relative;
             display: none;
             cursor: pointer;
             font-size: 1.5rem;
