@@ -72,8 +72,8 @@ Promise.all([
 
       const btnHtml = document.createElement('button');
       btnHtml.id = 'viewFullScreenBtn';
-      btnHtml.style = 'margin-top: 1rem; padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer;';
-      btnHtml.textContent = 'View Full Screen';
+      btnHtml.style = 'margin: 1.5rem 0rem; padding: 0.2rem 1rem; font-size: 1rem; cursor: pointer;';
+      btnHtml.textContent = 'View full screen';
       caseContent.appendChild(btnHtml);
 
       btnHtml.addEventListener('click', () => {

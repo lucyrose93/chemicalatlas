@@ -39,7 +39,7 @@ Promise.all([
   if (glossaryEntry) {
     glossaryHtml = `
       <section>
-        <h2>Relevant Glossary Term</h2>
+        <h3>Relevant Glossary Term</h3>
         <p><strong>${glossaryEntry.term}:</strong> ${glossaryEntry.definition}</p>
       </section>
     `;
