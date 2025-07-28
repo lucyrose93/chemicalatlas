@@ -81,9 +81,7 @@
         }
 
         #panel button.close-btn {
-            background: #007acc;
             border: none;
-            color: white;
             padding: 0.5rem 1rem;
             cursor: pointer;
             font-size: 1rem;
