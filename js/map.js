@@ -34,8 +34,8 @@ const highlightIcon = new L.Icon({
 });
 
 Promise.all([
-  fetch('../case-studies.json').then(res => res.json()),
-  fetch('../glossary.json').then(res => res.json())
+  fetch('./case-studies.json').then(res => res.json()),
+  fetch('./glossary.json').then(res => res.json())
 ])
 .then(([caseStudies, glossary]) => {
   // Store markers so we can access highlight marker later

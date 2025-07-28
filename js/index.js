@@ -101,8 +101,8 @@ toggleBtn.addEventListener('click', () => {
 
   // Initialize filters and cards
   Promise.all([
-    fetch('../case-studies.json').then(res => res.json()),
-    fetch('../glossary.json').then(res => res.json())
+    fetch('./case-studies.json').then(res => res.json()),
+    fetch('./glossary.json').then(res => res.json())
   ])
   .then(([csData, glossaryData]) => {
     caseStudies = csData;
