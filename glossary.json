@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "term": "Microplastic",
+        "definition": "Plastic particles less than 5mm that contaminate ecosystems and pose risks to health and environment."
+  },
+    {
+        "id": 2,
+        "term": "Toxicity",
+        "definition": "The degree to which a substance can cause harm to bodies and ecosystems."
+  },
+    {
+        "id": 3,
+        "term": "Persistence",
+        "definition": "Lorem ipsum dolor sim amet."
+  },
+    {
+        "id": 4,
+        "term": "Interscalar",
+        "definition": "Interscalar, as described by Gabrielle Hecht (2018), reveals how chemical pollution and its effects cannot be understood in isolation at a single scale. Industrial chemicals move through and shape social and ecological worlds at multiple levels, so Hecht uses the term interscalar to highlight complex power relations and uneven exposures across space and time.",
+        "reference": "Hecht, G. (2018). “Interscalar vehicles for an African Anthropocene: On waste, temporality, and violence.” Cultural Anthropology 33, no. 1: 109–141. https://doi.org/10.14506/ca33.1.05."
+  },
+    {
+        "id": 5,
+        "term": "Accumulation",
+        "definition": "Lorem ipsum dolor sim amet."
+  },
+    {
+        "id": 5,
+        "term": "Reproductive justice",
+        "definition": "Lorem ipsum dolor sim amet."
+  }
+
+]

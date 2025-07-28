@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chemical Atlas</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand"><a href="index.html">Cₐ</a></div>
+            <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="glossary">
+            <h1>Glossary</h1>
+            <p id="glossary-intro">Terms in this glossary address key challenges when it comes to understanding and communicating chemical relations. This resource is designed to be scalable and transdisciplinary with each term linking to relevant case studies.</p>
+            <div class="card-grid">
+<!--                dynamically populated by glossary. js-->
+            </div>
+                    <p style="text-align: right; margin-right: 1.5rem;"><a href="about.html">→ How can I find out more?</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Chemical Atlas: Prototype 2025.</p>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/glossary.js" defer></script>
+</body></html>

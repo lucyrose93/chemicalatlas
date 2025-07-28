@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chemical Atlas Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map-styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand"><a href="index.html">Cₐ</a></div>
+            <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="map" aria-label="Map showing case study locations"></div>
+
+    <div id="panel" aria-live="polite" aria-label="Case study details panel">
+        <button class="close-btn" aria-label="Close case study panel">&times; Close</button>
+        <div id="caseContent"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="js/case-study-renderer.js" defer></script>
+    <script src="js/map.js" defer></script>
+
+</body></html>

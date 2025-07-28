@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chemical Atlas</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand"><a href="index.html">Cₐ</a></div>
+            <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="glossary.html">Glossary</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="card-grid">
+                <div class="card">
+                    <h1>Chemical Atlas</h1>
+                    <p>A multimedia platform exploring ways to map the complex and evolving impacts of chemical pollution. This project emphasizes interdiscplinary collaboration, innovative methods, and storytelling to highlight uneven toxic worlds. <a href="./about.html">Find out more.</a></p><br>
+                </div>
+            </div>
+        </section>
+
+        <div id="filter-buttons">
+            <button id="toggleFiltersBtn" aria-expanded="false" aria-controls="filters">Filter by</button>
+            <button><a href="./">Reset</a></button>
+                    <button><a href="map.html">Open Map</a></button>
+
+
+        </div>
+
+        <div id="filters">
+            <fieldset>
+                <legend>Topic</legend>
+                <div id="topicFilters"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Scale</legend>
+                <div id="scaleFilters"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Knowledge Area</legend>
+                <div id="knowledgeFilters"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Glossary Term</legend>
+                <div id="glossaryFilters"></div>
+            </fieldset>
+        </div>
+        <div id="cards"></div>
+
+        <section id="repository">
+            <div class="card-grid" id="cards">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Chemical Atlas: Prototype 2025.</p>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/index.js" defer></script>
+</body>
+
+</html>
