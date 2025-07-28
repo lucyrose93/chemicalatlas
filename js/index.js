@@ -126,35 +126,3 @@ toggleBtn.addEventListener('click', () => {
     cardsEl.innerHTML = '<p>Error loading data.</p>';
   });
 });
-
-//const materials = [
-//  { title: "Reflecting on Microplastics", theme: "Reporting", type: "Article" },
-//  { title: "Teachers’ Guide", theme: "Education", type: "PDF" },
-//  { title: "Workshop: Microplastic Mapping", theme: "Environment", type: "Presentation" },
-//  { title: "Toxic Narratives", theme: "Reporting", type: "Article" },
-//  { title: "Plastic and Policy", theme: "Environment", type: "PDF" },
-//  { title: "Chemical Literacy Toolkit", theme: "Education", type: "Guide" }
-//];
-//
-//const cardsEl = document.getElementById("cards");
-//const filterEl = document.getElementById("themeFilter");
-//
-//function renderCards(filterTheme = "All") {
-//  cardsEl.innerHTML = "";
-//  const filtered = materials.filter(m => filterTheme === "All" || m.theme === filterTheme);
-//  filtered.forEach(m => {
-//    const card = document.createElement("div");
-//    card.className = "card";
-//    card.innerHTML = `
-//      <h3>${m.title}</h3>
-//      <div class="tags">${m.theme} • ${m.type}</div>
-//    `;
-//    cardsEl.append(card);
-//  });
-//}
-//
-//filterEl.addEventListener("change", () => {
-//  renderCards(filterEl.value);
-//});
-//
-//renderCards();
