@@ -40,7 +40,7 @@ Promise.all([
     glossaryHtml = `
       <section>
         <h3>Relevant Glossary Term</h3>
-        <p><strong>${glossaryEntry.term}:</strong> ${glossaryEntry.definition}</p>
+        <p><strong>${glossaryEntry.term}:</strong> ${glossaryEntry.definition}<a href="glossary.html"> Open Glossary...</a></p>
       </section>
     `;
   }

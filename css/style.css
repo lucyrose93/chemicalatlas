@@ -28,6 +28,10 @@ a,
     color: #007acc;
 }
 
+#viewMapBtn {
+        margin-top: 2.5rem;
+}
+
 a:hover {
     cursor: crosshair;
 }
@@ -96,7 +100,6 @@ h2, h3, h4, h5, h6 {
 }
 
 .hero {
-    background: #e8f0f2;
     padding: 0;
     text-align: left;
 
@@ -185,7 +188,7 @@ footer {
 
 .card {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -239,4 +242,3 @@ fieldset legend {
     position: absolute;
     right: 1rem;
 }
-
