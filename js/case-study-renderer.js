@@ -2,7 +2,7 @@ window.buildImagesHtml = function(images, title) {
   if (!images || images.length === 0) return '';
   let html = '<div class="images">';
   images.forEach(src => {
-    html += `<img src="${src}" alt="${title} image" style="max-width: 100%; margin-bottom: 0.5rem;">`;
+    html += `<img src="${src}" alt="${title} image" style="max-width: 100%; max-width: 700px; margin-bottom: 0.5rem; margin-top: 0.5rem">`;
   });
   html += '</div>';
   return html;

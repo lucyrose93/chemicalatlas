@@ -8,7 +8,7 @@
         "scale": "Local",
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "analysis": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "images": ["images/urban1.jpg", "images/urban2.jpg"],
+        "images": ["./imgs/placeholder-marbling.jpg"],
         "video": null,
         "glossary_term": "Microplastic",
         "coords": [40.7128, -74.0060],
