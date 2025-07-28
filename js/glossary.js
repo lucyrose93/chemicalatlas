@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardGrid = document.querySelector('#glossary .card-grid');
   cardGrid.innerHTML = ''; // Clear placeholders
 
-  const WORD_LIMIT = 90; // approximate word limit for truncation
-  const CHAR_LIMIT = 800; // fallback character limit if preferred
+  const WORD_LIMIT = 80; // approximate word limit for truncation
+  const CHAR_LIMIT = 400; // fallback character limit if preferred
 
   let caseStudiesCache = null;
 
