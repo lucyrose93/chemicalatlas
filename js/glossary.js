@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let caseStudiesCache = null;
 
-  fetch('glossary.json')
+  fetch('./glossary.json')
     .then(res => res.json())
     .then(glossary => {
       // Sort glossary alphabetically by term (case-insensitive)
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.addEventListener('click', () => {
           if (caseList.style.display === 'none') {
             if (!caseStudiesCache) {
-              fetch('case-studies.json')
+              fetch('./case-studies.json')
                 .then(res => res.json())
                 .then(caseStudies => {
                   caseStudiesCache = caseStudies;
@@ -139,103 +139,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//document.addEventListener('DOMContentLoaded', () => {
-//  const cardGrid = document.querySelector('#glossary .card-grid');
-//  cardGrid.innerHTML = ''; // Clear placeholders
-//
-//  let caseStudiesCache = null;
-//
-//  fetch('glossary.json')
-//    .then(res => res.json())
-//    .then(glossary => {
-//      // Sort glossary alphabetically by term (case-insensitive)
-//      glossary.sort((a, b) => a.term.toLowerCase().localeCompare(b.term.toLowerCase()));
-//
-//      glossary.forEach(entry => {
-//        const card = document.createElement('div');
-//        card.className = 'card';
-//
-//        // Create base innerHTML without reference
-//        card.innerHTML = `
-//          <strong>${entry.term}</strong> ${entry.definition}
-//          <p class="toggle-reference" style="color: #7d7d7d; cursor: pointer; margin-top: 0.5rem">→ Show reference</p>
-//          <div class="reference" style="display: none; font-size: 0.8rem; font-family: Arial; color: #7d7d7d; margin-top: 0.25rem;">${entry.reference || ''}</div>
-//          <p class="toggle-case-studies" style="color: blue; cursor: pointer; margin-top: 0.2rem;">→ See relevant case studies</p>
-//          <div class="case-studies-list" style="display: none; margin-top: 0.2rem;"></div>
-//        `;
-//
-//        // Reference toggle logic
-//        const toggleRef = card.querySelector('.toggle-reference');
-//        const refDiv = card.querySelector('.reference');
-//        if (!entry.reference) {
-//          toggleRef.style.display = 'none'; // Hide toggle if no reference
-//        } else {
-//          toggleRef.addEventListener('click', () => {
-//            if (refDiv.style.display === 'none') {
-//              refDiv.style.display = 'block';
-//              toggleRef.textContent = '← Hide reference';
-//            } else {
-//              refDiv.style.display = 'none';
-//              toggleRef.textContent = '→ Show reference';
-//            }
-//          });
-//        }
-//
-//        // Case studies toggle logic
-//        const toggle = card.querySelector('.toggle-case-studies');
-//        const caseList = card.querySelector('.case-studies-list');
-//
-//        toggle.addEventListener('click', () => {
-//          if (caseList.style.display === 'none') {
-//            if (!caseStudiesCache) {
-//              fetch('case-studies.json')
-//                .then(res => res.json())
-//                .then(caseStudies => {
-//                  caseStudiesCache = caseStudies;
-//                  showRelevantCases(caseStudiesCache, entry.term, caseList);
-//                })
-//                .catch(err => {
-//                  caseList.innerHTML = '<p>Error loading case studies.</p>';
-//                  caseList.style.display = 'block';
-//                });
-//            } else {
-//              showRelevantCases(caseStudiesCache, entry.term, caseList);
-//            }
-//            toggle.textContent = '← Hide relevant case studies';
-//            caseList.style.display = 'block';
-//          } else {
-//            toggle.textContent = '→ See relevant case studies';
-//            caseList.style.display = 'none';
-//          }
-//        });
-//
-//        cardGrid.appendChild(card);
-//      });
-//    })
-//    .catch(err => {
-//      cardGrid.innerHTML = '<p>Error loading glossary entries.</p>';
-//      console.error('Failed to load glossary:', err);
-//    });
-//
-//  function showRelevantCases(caseStudies, term, container) {
-//    container.innerHTML = '';
-//
-//    const relevant = caseStudies.filter(cs => cs.glossary_term === term);
-//
-//    if (relevant.length === 0) {
-//      container.innerHTML = '<p>No relevant case studies found.</p>';
-//      return;
-//    }
-//
-//    const ul = document.createElement('ul');
-//    relevant.forEach(cs => {
-//      const li = document.createElement('li');
-//      const a = document.createElement('a');
-//      a.href = `case-study.html?id=${cs.id}`;
-//      a.textContent = cs.title;
-//      li.appendChild(a);
-//      ul.appendChild(li);
-//    });
-//    container.appendChild(ul);
-//  }
-//});
