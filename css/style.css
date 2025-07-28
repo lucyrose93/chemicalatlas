@@ -233,3 +233,8 @@ fieldset legend {
     line-height: 1.2rem;
 }
 
+.close-btn {
+    position: absolute;
+    right: 1rem;
+}
+
