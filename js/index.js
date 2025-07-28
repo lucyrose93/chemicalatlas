@@ -39,7 +39,7 @@ toggleBtn.addEventListener('click', () => {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <h3><a href="case-study.html?id=${cs.id}" target="_blank" rel="noopener noreferrer">${cs.title}</a></h3>
+      <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer">${cs.title}</a></h3>
       <p><strong>Topic:</strong> ${cs.topic}</p>
       <p><strong>Scale:</strong> ${cs.scale}</p>
       <p><strong>Knowledge Area:</strong> ${cs.knowledge_area}</p>

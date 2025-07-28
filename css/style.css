@@ -38,6 +38,7 @@ a:hover {
 h1 {
     font-size: 2.5rem;
     font-weight: 500;
+    line-height: 2.8rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -221,3 +222,12 @@ fieldset legend {
     gap: 1rem;
 }
 
+#caseStudyMain p {
+    padding:0;
+    margin:0;
+    line-height: 1.2rem;
+}
+#caseContent p {
+    margin: 0;
+    line-height: 1.2rem;
+}

@@ -22,7 +22,7 @@ window.buildCaseStudyHtml = function(cs, includeViewFullScreenBtn = false) {
   const imagesHtml = window.buildImagesHtml(cs.images, cs.title);
   const videoHtml = window.buildVideoHtml(cs.video);
   const viewFullScreenBtnHtml = includeViewFullScreenBtn
-    ? `<button id="viewFullScreenBtn" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer;">View Full Screen</button>`
+    ? `<button id="viewFullScreenBtn" style="margin-top: 1rem; padding-top:1rem; font-size: 1rem; cursor: pointer;">View Full Screen</button>`
     : '';
   return `
     <h2>${cs.title}</h2>
@@ -30,6 +30,8 @@ window.buildCaseStudyHtml = function(cs, includeViewFullScreenBtn = false) {
     <p><strong>Topic:</strong> ${cs.topic}</p>
     <p><strong>Knowledge Area:</strong> ${cs.knowledge_area || ''}</p>
     <p><strong>Scale:</strong> ${cs.scale || ''}</p>
+    <p><strong>Source:</strong> ${cs.source || 'N/A'}</p>
+
     ${imagesHtml}
     ${videoHtml}
     <h3>Summary</h3>
