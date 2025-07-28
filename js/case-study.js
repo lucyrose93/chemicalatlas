@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 Promise.all([
-  fetch('../case-studies.json').then(res => res.json()),
-  fetch('../glossary.json').then(res => res.json())
+  fetch('./case-studies.json').then(res => res.json()),
+  fetch('./glossary.json').then(res => res.json())
 ])
 .then(([caseStudies, glossary]) => {
   const cs = caseStudies.find(c => c.id.toString() === caseId);
