@@ -11,7 +11,7 @@
         "images": ["./imgs/placeholder-marbling.jpg"],
         "video": null,
         "glossary_term": "Reproductive justice",
-        "coords": [40.7128, -74.0060],
+        "coords": [25.7303, 84.8341],
         "source": "author (year)"
   },
     {
@@ -26,7 +26,7 @@
         "images": ["imgs/placeholder-samples.jpg"],
         "video": "./videos/placeholder-coast.mp4",
         "glossary_term": "Microplastic",
-        "coords": [34.0522, -118.2437],
+        "coords": [-6.4185, 110.8582],
         "source": "author (year)"
   },
     {
@@ -41,7 +41,7 @@
         "images": ["./imgs/placeholder-idaho.jpg", "./imgs/placeholder-leaf.jpg"],
         "video": null,
         "glossary_term": "Accumulation",
-        "coords": [45.4215, -75.6972],
+        "coords": [44.4397, -114.9168],
         "source": "author (year)"
 
   },
@@ -57,7 +57,7 @@
         "images": ["./imgs/placeholder-dark-clouds.jpg"],
         "video": "./videos/placeholder-smokestack.mp4",
         "glossary_term": "Interscalar",
-        "coords": [51.5074, -0.1278],
+        "coords": [5.6658, 0.0110],
         "source": "author (year)"
   },
     {
@@ -72,7 +72,7 @@
         "images": ["./imgs/placeholder-agriculture.jpg"],
         "video": null,
         "glossary_term": "Toxicity",
-        "coords": [36.7783, -119.4179],
+        "coords": [37.0983, -6.5414],
         "source": "author (year)"
   },
     {
@@ -87,7 +87,7 @@
         "images": ["./imgs/placeholder-turquoise.jpg", "./imgs/placeholder-bubbles.jpg"],
         "video": "./videos/placeholder-ocean.mp4",
         "glossary_term": "Microplastic",
-        "coords": [14.5995, 120.9842],
+        "coords": [52.4579, -55.2329],
         "source": "author (year)"
   },
      {
@@ -102,7 +102,7 @@
         "images": ["./imgs/placeholder-infra.jpg"],
         "video": "./videos/placeholder-factory-night.mp4",
         "glossary_term": "Persistence",
-        "coords": [14.5995, 120.9842],
+        "coords": [55.4822, 13.2933],
         "source": "author (year)"
   },
     {
@@ -117,7 +117,7 @@
         "images": ["./imgs/placeholder-earthy.jpg"],
         "video": "./videos/placeholder-mining.mp4",
         "glossary_term": "Interscalar",
-        "coords": [14.5995, 120.9842],
+        "coords": [-25.6301, -69.5759],
         "source": "author (year)"
   }
     
