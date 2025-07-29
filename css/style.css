@@ -79,24 +79,6 @@ h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .navbar .menu {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-    }
-
-    .navbar .menu.active {
-        display: flex;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    .navbar-toggle {
-        display: block;
-    }
-}
-
 .hero {
     padding: 0;
     text-align: left;
@@ -249,4 +231,36 @@ fieldset legend {
 }
 #reset-btn a, #open-map-btn a {
     color: #007acc;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .navbar {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    footer {
+        font-size: 0.7rem;
+    }
 }

@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1rem 1rem 0;
+    }
+    
     .navbar .menu {
         flex-direction: column;
         width: 100%;
