@@ -9,7 +9,7 @@ const caseContent = document.getElementById('caseContent');
 const closeBtn = panel.querySelector('.close-btn');
 
 closeBtn.addEventListener('click', () => {
-  panel.style.display = 'none';
+  panel.classList.remove('show');
 });
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -80,7 +80,7 @@ Promise.all([
         window.open(`./case-study.html?id=${cs.id}`, '_blank');
       });
 
-      panel.style.display = 'block';
+      panel.classList.add('show');
     });
   });
 
