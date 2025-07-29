@@ -239,3 +239,14 @@ fieldset legend {
     position: absolute;
     right: 1rem;
 }
+#toggleFiltersBtn, #reset-btn, #open-map-btn {
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    background: white;
+    font-family: monospace;
+    color: #007acc;
+}
+#reset-btn a, #open-map-btn a {
+    color: #007acc;
+}
