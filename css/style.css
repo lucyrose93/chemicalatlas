@@ -8,7 +8,6 @@ body {
 body {
     font-family: monospace; sans-serif;
     margin: 0 auto;
-    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -51,7 +50,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    background: #3a3b3c;
+    background: #fff;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +70,6 @@ h2, h3, h4, h5, h6 {
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
     padding-left: 1rem;
 }
 
@@ -111,7 +109,6 @@ iframe {
 }
 
 footer {
-    background: #f0f0f0;
     color: #ccc;
     padding: 0.2rem 1rem;
     text-align: left;
@@ -201,7 +198,6 @@ footer {
 
 #filters {
     padding: 1rem 0.5rem;
-    background: #fafafa;
     border: solid 0.5px;
     margin: 1rem;
     border-radius: 8px;

@@ -1,5 +1,4 @@
 .navbar {
-    background: #f8f8f8;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +6,7 @@
     align-items: center;
     position: relative;
     z-index: 1001;
+    margin-bottom: 0;
 }
 
 .navbar .brand {
@@ -15,7 +15,6 @@
 
 .navbar .brand a {
     text-decoration: none;
-    color: inherit;
 }
 
 .navbar .menu {
@@ -25,7 +24,6 @@
 
 .navbar a {
     text-decoration: none;
-    color: #333;
 }
 
 .navbar-toggle {
@@ -51,7 +49,6 @@
     right: 0;
     width: 50vw;
     background: rgba(255, 255, 255, 0.95);
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
     overflow-y: auto;
     padding: 1rem 2rem;
     z-index: 2;

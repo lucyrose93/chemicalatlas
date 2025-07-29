@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         card.innerHTML = `
           <strong>${entry.term}</strong> 
           <p class="definition">${truncated}</p>
-          ${isTruncated ? '<p class="read-more" style="color: blue; font-style:italic; cursor: pointer; margin: 0.2rem 0;">...continue reading</p>' : ''}
+          ${isTruncated ? '<p class="read-more" style="color: #007acc; font-style:italic; cursor: pointer; margin: 0.2rem 0;">...continue reading</p>' : ''}
           <p class="toggle-reference" style="color: #7d7d7d; cursor: pointer; margin-top: 0.5rem;">→ Show reference</p>
           <div class="reference" style="display: none; font-size: 0.8rem; font-family: Arial; color: #7d7d7d; margin-top: 0.25rem;">${entry.reference || ''}</div>
-          <p class="toggle-case-studies" style="color: blue; cursor: pointer; margin-top: 0.2rem;">→ See relevant case studies</p>
+          <p class="toggle-case-studies" style="color: #007acc; cursor: pointer; margin-top: 0.2rem;">→ See relevant case studies</p>
           <div class="case-studies-list" style="display: none; margin-top: 0.2rem;"></div>
         `;
 
