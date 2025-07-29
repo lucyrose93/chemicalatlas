@@ -11,8 +11,8 @@ window.buildImagesHtml = function(images, title) {
 window.buildVideoHtml = function(video) {
   if (!video) return '';
   return `
-    <video controls style="width: 800px; max-width: 100%; margin-top: 1rem;">
-      <source src="${video}" type="video/mp4" />
+    <video controls style="width: 800px; max-width: 100%; margin-top: 1rem; border: #ccc solid 1px;">
+      <source src="${video}" type="video/mp4"/>
       Your browser does not support the video tag.
     </video>
   `;
