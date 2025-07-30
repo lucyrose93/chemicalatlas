@@ -18,7 +18,7 @@
         "id": 4,
         "term": "Interscalar",
         "definition": "Interscalar, as described by Gabrielle Hecht (2018), reveals how chemical pollution and its effects cannot be understood in isolation at a single scale. Industrial chemicals move through and shape social and ecological worlds at multiple levels, so Hecht uses the term interscalar to highlight complex power relations and uneven exposures across space and time.",
-        "reference": "Hecht, G. (2018). “Interscalar vehicles for an African Anthropocene: On waste, temporality, and violence.” Cultural Anthropology 33, no. 1: 109–141. https://doi.org/10.14506/ca33.1.05."
+        "reference": "Hecht, G. (2018). “Interscalar vehicles for an African Anthropocene: On waste, temporality, and violence.” Cultural Anthropology 33(1): 109–141. https://doi.org/10.14506/ca33.1.05."
   },
     {
         "id": 5,
@@ -26,9 +26,22 @@
         "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
   },
     {
-        "id": 5,
+        "id": 6,
         "term": "Reproductive justice",
         "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, 
+    {
+        "id": 7,
+        "term": "Animacy",
+        "definition": "Animacy refers to the quality or state of being alive or having life-like qualities. In anthropological and critical theory contexts, it explores how not only humans but also non-human entities – such as chemicals, objects, or environments – are experienced as having agency, vitality, or affective presence. In Mel Chen's article, 'Toxic animacies, inanimate affections' they describe how toxins like lead move, hurt, and harm. This challenges traditional distinctions between living and nonliving by recognizing the potent agency of chemicals.", 
+        "reference": "Chen (2011). “Toxic animacies, inanimate affections.” GLQ 17(2-3): 265-268. ISSN 1527-9375."
+  },
+    {
+        "id": 8,
+        "term": "Alterlife",
+        "definition": "Life itself is transformed and shaped by chemicals, not just as hazards but as agents that produce new forms of existence, relations, and knowledges. A concrete example of alterlife (Murphy 2017), is the way certain communities living near industrial zones adapt to persistent chemical exposures by developing new social practices, health understandings, and ecological relationships that blur the line between what is considered natural or toxic.", 
+        "reference": "Murphy, M. (2017). “Alterlife and decolonial chemical relations.” Cultural Anthropology 32(4): 494–503. https://doi.org/10.14506/ca32.4.02."
   }
 
 ]
+
