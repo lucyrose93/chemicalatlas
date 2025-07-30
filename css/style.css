@@ -61,6 +61,8 @@ h2, h3, h4, h5, h6 {
 .navbar .brand {
     font-size: 1.2rem;
     font-weight: 200;
+      text-shadow: 0 0 25px #0000CD, 0 0 40px #ADD8E6;
+
 }
 
 .navbar .menu {
