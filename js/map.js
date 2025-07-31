@@ -25,7 +25,7 @@ const defaultIcon = new L.Icon({
 });
 
 const highlightIcon = new L.Icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
   iconSize: [30, 50],
   iconAnchor: [15, 50],
@@ -72,7 +72,7 @@ Promise.all([
 
       const btnHtml = document.createElement('button');
       btnHtml.id = 'viewFullScreenBtn';
-      btnHtml.style = 'margin: 1.5rem 0rem; padding: 0.2rem 1rem; font-family: "Forum", serif; font-size: 1rem; cursor: pointer; border: 0; color: #007acc;';
+      btnHtml.style = 'margin: 1.5rem 0rem; padding: 0.2rem 1rem; font-family: "Forum", serif; font-size: 1rem; cursor: pointer; border: 0; color: #006699; border-radius: 2px; background: #fff; border: solid 1px #ff9999;';
       btnHtml.textContent = 'View full screen';
       caseContent.appendChild(btnHtml);
 

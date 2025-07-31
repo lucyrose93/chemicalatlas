@@ -36,7 +36,7 @@ toggleBtn.addEventListener('click', () => {
   }
   items.forEach(cs => {
     const thumbnailHtml = cs.images && cs.images.length > 0
-      ? `<img src="${cs.images[0]}" alt="${cs.title} thumbnail" style="width: 100%; max-height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 0.2rem;">`
+      ? `<img src="${cs.images[0]}" alt="${cs.title} thumbnail" style="width: 100%; max-height: 150px; object-fit: cover; border-radius: 2px; margin-bottom: 0.2rem;">`
       : '';
 
     const card = document.createElement('div');
