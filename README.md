@@ -1,5 +1,5 @@
 
-# 🧪 Chemical Atlas
+# 🧪 [Chemical Atlas](https://lucyrose93.github.io/chemicalatlas/)
 
 **Chemical Atlas** is an interdisciplinary multimedia platform that begins to map (or explore ways of mapping) the sprawling, complex, and ongoing reverberations of chemical pollution. This is not a comprehensive atlas—pollutants operate across too many spatio-temporal scales. Instead, this project focuses on **cross-disciplinary collaboration**, methodological resources, and storytelling to better understand and communicate uneven chemical relations.
 
