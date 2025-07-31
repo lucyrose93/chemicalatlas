@@ -235,6 +235,7 @@ fieldset legend {
 .close-btn {
     position: absolute;
     right: 1rem;
+    margin-top: 1.5rem;
 }
 #toggleFiltersBtn, #reset-btn, #open-map-btn {
     border: 1px solid #99cc99;
@@ -286,6 +287,9 @@ fieldset legend {
     .card {
         padding: 0.6rem;
     }
+    .close-btn {
+        margin-top: 0.2rem;
+    }
 }
 
 /*styles terms in glossary */
@@ -293,3 +297,5 @@ fieldset legend {
     font-weight: 900;
     font-size: 1.2rem;
 }
+
+
