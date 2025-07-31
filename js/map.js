@@ -72,7 +72,7 @@ Promise.all([
 
       const btnHtml = document.createElement('button');
       btnHtml.id = 'viewFullScreenBtn';
-      btnHtml.style = 'margin: 1.5rem 0rem; padding: 0.2rem 1rem; font-size: 1rem; cursor: pointer; border: 0; color: #007acc;';
+      btnHtml.style = 'margin: 1.5rem 0rem; padding: 0.2rem 1rem; font-family: "Forum", serif; font-size: 1rem; cursor: pointer; border: 0; color: #007acc;';
       btnHtml.textContent = 'View full screen';
       caseContent.appendChild(btnHtml);
 

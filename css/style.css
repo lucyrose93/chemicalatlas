@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+
 html,
 body {
     height: 100%;
@@ -6,13 +9,15 @@ body {
 }
 
 body {
-    font-family: monospace; sans-serif;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin-bottom: 3.5rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
 }
 
 main {
@@ -229,7 +234,7 @@ fieldset legend {
     padding: 0.4rem;
     font-size: 0.9rem;
     background: white;
-    font-family: monospace;
+    font-family: "Forum", serif;
     color: #007acc;
 }
 #reset-btn a, #open-map-btn a {
