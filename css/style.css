@@ -12,13 +12,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin-bottom: 3.5rem;
-    max-width: 1440px;
-    /* test on a monitor */
     line-height: 1.2rem;
 }
 
 main {
     flex: 1;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 a,
@@ -96,7 +96,7 @@ iframe {
 footer {
     color: #ccc;
     padding: 0.2rem 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 #glossary {
