@@ -1,8 +1,9 @@
-const map = L.map('map').setView([20, 0], 2);
-
+const map = L.map('map', {
+  minZoom: 2  // minimum zoom level
+}).setView([20, 0], 2);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19
+    maxZoom: 19
 }).addTo(map);
 
 const panel = document.getElementById('panel');
