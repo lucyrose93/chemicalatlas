@@ -33,7 +33,7 @@
 
 #map {
     position: fixed;
-    top: 56px; /* height of navbar */
+    top: 80px; /* height of navbar */
     left: 0;
     right: 0;
     bottom: 0;
