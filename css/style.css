@@ -51,6 +51,11 @@ h1 {
     line-height: 2.8rem;
     color: #336633;
 }
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.7rem;
+}
+
 h2 {
     font-size: 1.8rem;
 }
@@ -95,6 +100,10 @@ h2, h3, h4, h5, h6 {
 .hero {
     padding: 0;
     text-align: left;
+}
+.hero .card p {
+    line-height: 1.5rem;
+    letter-spacing: 0.015rem;
 }
 
 iframe {
