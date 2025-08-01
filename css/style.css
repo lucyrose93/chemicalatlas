@@ -292,6 +292,7 @@ fieldset legend {
     background: white;
     font-family: "Forum", serif;
     letter-spacing: 0.05rem;
+    font-weight: 900;
 }
 
 #reset-btn a {
