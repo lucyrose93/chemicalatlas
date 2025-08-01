@@ -133,7 +133,7 @@ h6 {
 }
 
 iframe {
-    width: 1200px;
+    width: 1100px;
     height: 100vh;
 }
 
@@ -149,7 +149,7 @@ footer a {
 
 #glossary {
     padding: 1.5rem 0 2rem 0;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -195,9 +195,8 @@ footer a {
 }
 
 #about-inner {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 1rem;
 }
 
 .card-grid {
@@ -393,6 +392,9 @@ fieldset legend {
     #filter-buttons {
         margin-bottom: 0;
     }
+    #about-inner {
+        padding: 1rem;
+    }
 }
 
 /*styles terms in glossary */
@@ -402,5 +404,5 @@ fieldset legend {
 }
 
 hr {
-    border: solid 0.3px #99cccc;
+    border: solid 0.2px #99cccc;
 }
