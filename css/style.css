@@ -214,7 +214,7 @@ fieldset legend {
 }
 
 #filter-buttons {
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 1rem;
 }
 #funding-container {
     display: flex;
@@ -241,7 +241,7 @@ fieldset legend {
     border: 1px solid #99cc99;
     border-radius: 2px;
     padding: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background: white;
     font-family: "Forum", serif;
     color: #006699;
