@@ -400,3 +400,7 @@ fieldset legend {
     font-weight: 900;
     font-size: 1.2rem;
 }
+
+hr {
+    border: solid 0.3px #99cccc;
+}
