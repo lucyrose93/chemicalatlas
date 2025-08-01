@@ -14,7 +14,7 @@ body {
     font-style: normal;
     color: #333333;
     margin: 0 auto;
-    display: flex;
+/*    display: flex;*/
     flex-direction: column;
     min-height: 100vh;
     margin-bottom: 3.5rem;
@@ -22,8 +22,8 @@ body {
 }
 
 main {
-    flex: 1;
-    max-width: 1280px;
+/*    flex: 1;*/
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -289,6 +289,9 @@ fieldset legend {
     }
     .close-btn {
         margin-top: 0.2rem;
+    }
+    .hero .card {
+        border: 0;
     }
 }
 
