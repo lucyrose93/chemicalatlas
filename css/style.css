@@ -14,17 +14,16 @@ body {
     font-style: normal;
     color: #333333;
     margin: 0 auto;
-/*    display: flex;*/
-    flex-direction: column;
     min-height: 100vh;
     margin-bottom: 3.5rem;
     line-height: 1.5rem;
 }
+
 .brand {
     height: 3rem;
 }
+
 main {
-/*    flex: 1;*/
     max-width: 1950px;
     margin: 0 auto;
 }
@@ -41,7 +40,8 @@ a,
 }
 
 #viewMapBtn {
-        margin-top: 2.5rem;
+    margin-top: 2.5rem;
+    color: #cc6666;
 }
 
 a:hover {
@@ -52,6 +52,7 @@ a:hover {
     color: #cc6666;
     margin-right: 1rem;
 }
+
 #map-link-active {
     color: #ffcccc;
 }
@@ -66,11 +67,13 @@ h1 {
     line-height: 2.8rem;
     color: #336633;
 }
+
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 2rem;
     letter-spacing: 0.1rem
 }
+
 #site-intro {
     max-width: 1080px;
     text-align: center;
@@ -82,7 +85,11 @@ h2 {
     font-size: 1.8rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }
 
@@ -119,6 +126,7 @@ h2, h3, h4, h5, h6 {
     padding: 0;
     text-align: left;
 }
+
 .hero .card p {
     line-height: 1.5rem;
     letter-spacing: 0.015rem;
@@ -134,8 +142,9 @@ footer {
     padding: 0.2rem 1rem;
     text-align: center;
 }
+
 footer a {
-        color: #cccc99;
+    color: #cccc99;
 }
 
 #glossary {
@@ -153,14 +162,15 @@ footer a {
     display: grid;
     grid-template-columns: 1fr;
     /* One column per row */
-    
+
     /* Center horizontally */
 }
 
 #glossary .card {
-  flex-direction: column;
-  width: 100%; /* Ensure card fills the grid column */
-  box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    /* Ensure card fills the grid column */
+    box-sizing: border-box;
 }
 
 #glossary strong {
@@ -168,6 +178,7 @@ footer a {
     font-weight: 300;
     padding-bottom: 0.5rem;
 }
+
 #glossary-intro {
     margin-left: 1.2rem;
     padding-right: 0.8rem;
@@ -215,6 +226,7 @@ footer a {
     display: flex;
     flex-direction: column;
 }
+
 .card p {
     margin: 0;
     line-height: 1.2rem;
@@ -246,6 +258,7 @@ fieldset legend {
     flex-direction: row;
     justify-content: space-between;
 }
+
 #funding-container {
     display: flex;
     flex-direction: row;
@@ -253,10 +266,11 @@ fieldset legend {
 }
 
 #caseStudyMain p {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     line-height: 1.2rem;
 }
+
 #caseContent p {
     margin: 0;
     line-height: 1.2rem;
@@ -267,33 +281,43 @@ fieldset legend {
     right: 1rem;
     margin-top: 1.5rem;
 }
-#toggleFiltersBtn, #reset-btn, #open-map-btn {
+
+#toggleFiltersBtn,
+#reset-btn,
+#open-map-btn {
     border: 0.5px solid #99cccc;
     border-radius: 2px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background: white;
     font-family: "Forum", serif;
+    letter-spacing: 0.05rem;
 }
+
 #reset-btn a {
     color: #99cc99;
 }
+
 #toggleFiltersBtn {
     color: #006699;
 }
-#toggleFiltersBtn, #reset-btn {
+
+#toggleFiltersBtn,
+#reset-btn {
     margin-right: 0.5rem;
 }
+
 #open-map-btn a {
     color: #cc6666;
 }
 
-@media (max-width: 1180px){
-        .card-grid {
-            grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+@media (max-width: 1180px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
+
     #cards {
-            grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     }
 }
 
@@ -303,6 +327,7 @@ fieldset legend {
         width: 100%;
         display: none;
     }
+
     .navbar {
         padding: 1rem 1rem 1rem 0;
     }
@@ -312,39 +337,60 @@ fieldset legend {
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     h1 {
         font-size: 2.3rem;
         margin-top: 0;
         padding: 0;
     }
+
     .hero h1 {
         font-size: 3rem;
         margin-bottom: 1.8rem;
     }
+
     h2 {
         font-size: 1.7rem;
     }
+
     footer {
         font-size: 0.8rem;
         text-align: left;
     }
+
     .card {
         padding: 0.6rem;
     }
+
     .close-btn {
         margin-top: 0.2rem;
     }
+
     .hero .card {
         border: 0;
     }
+
     .card-grid {
-            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
+
     #cards {
-            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    #toggleFiltersBtn,
+    #reset-btn,
+    #open-map-btn {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.02rem;
+    }
+    #filter-buttons {
+        margin-bottom: 0;
     }
 }
 
@@ -353,5 +399,3 @@ fieldset legend {
     font-weight: 900;
     font-size: 1.2rem;
 }
-
-
