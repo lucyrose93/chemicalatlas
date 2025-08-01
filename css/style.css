@@ -146,7 +146,7 @@ footer a {
 
 #glossary h1 {
     text-align: left;
-    margin: 2rem 1rem 1.5rem 1rem;
+    margin: 0rem 1rem 1.5rem 1rem;
 }
 
 #glossary .card-grid {
@@ -191,7 +191,7 @@ footer a {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     padding: 1rem;
     gap: 1rem;
 }
@@ -203,7 +203,7 @@ footer a {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     gap: 1.25rem;
     padding: 1rem 1rem;
 }
@@ -288,6 +288,15 @@ fieldset legend {
     color: #cc6666;
 }
 
+@media (max-width: 1180px){
+        .card-grid {
+            grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    #cards {
+            grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .navbar .menu {
         flex-direction: column;
@@ -330,6 +339,12 @@ fieldset legend {
     }
     .hero .card {
         border: 0;
+    }
+    .card-grid {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    #cards {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
 }
 
