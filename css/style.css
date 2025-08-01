@@ -215,6 +215,9 @@ fieldset legend {
 
 #filter-buttons {
     margin: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #funding-container {
     display: flex;
@@ -238,16 +241,24 @@ fieldset legend {
     margin-top: 1.5rem;
 }
 #toggleFiltersBtn, #reset-btn, #open-map-btn {
-    border: 1px solid #99cc99;
+    border: 0.5px solid #99cccc;
     border-radius: 2px;
-    padding: 0.4rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     background: white;
     font-family: "Forum", serif;
+}
+#reset-btn a {
+    color: #99cc99;
+}
+#toggleFiltersBtn {
     color: #006699;
 }
-#reset-btn a, #open-map-btn a {
-    color: #99cc99;
+#toggleFiltersBtn, #reset-btn {
+    margin-right: 0.5rem;
+}
+#open-map-btn a {
+    color: #cc6666;
 }
 
 @media (max-width: 768px) {
