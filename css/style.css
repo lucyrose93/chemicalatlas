@@ -83,6 +83,11 @@ h1 {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2.2rem;
+    font-weight: 900;
+}
+#site-intro p {
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
 }
 
 h2 {
@@ -126,17 +131,12 @@ h6 {
     color: #339999;
 }
 
-.hero {
-    padding: 0;
-    text-align: left;
-}
-
 .hero .card p {
     line-height: 1.5rem;
     letter-spacing: 0.015rem;
 }
 
-.hero .card {
+.hero {
     background-image: url("../imgs/placeholder-main.jpg");
     min-height: 100%;
     /* Create the parallax scrolling effect */
@@ -144,6 +144,9 @@ h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.hero .card {
+    border: 0;
 }
 
 iframe {
