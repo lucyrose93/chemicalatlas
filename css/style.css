@@ -271,7 +271,7 @@ fieldset legend {
 }
 
 #filter-buttons {
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -365,6 +365,9 @@ fieldset legend {
         font-size: 2.3rem;
         margin-top: 0rem;
         padding: 0;
+    }
+    .hero {
+        background-image: url("../imgs/placeholder-main-mobile.jpg");
     }
 
     .hero h1 {
