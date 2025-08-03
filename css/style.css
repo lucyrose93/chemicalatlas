@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
-
 html,
 body {
     height: 100%;
@@ -17,6 +16,7 @@ body {
     min-height: 100vh;
     margin-bottom: 3.5rem;
     line-height: 1.5rem;
+    padding: 0;
 }
 
 .brand {
@@ -31,6 +31,10 @@ main {
 .navbar {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+.navbar {
+    margin: 0;
 }
 
 a,
@@ -78,7 +82,7 @@ h1 {
     max-width: 1080px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.2rem;
 }
 
 h2 {
@@ -95,7 +99,7 @@ h6 {
 
 .navbar {
     background: #fff;
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: 0.6rem 1rem 0rem 0.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -130,6 +134,16 @@ h6 {
 .hero .card p {
     line-height: 1.5rem;
     letter-spacing: 0.015rem;
+}
+
+.hero .card {
+    background-image: url("../imgs/placeholder-main.jpg");
+    min-height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 iframe {
@@ -331,7 +345,7 @@ fieldset legend {
     }
 
     .navbar {
-        padding: 1rem 1rem 1rem 0;
+        padding: 1rem 1rem 0rem 0.5rem;
     }
 
     .navbar .menu.active {
@@ -346,13 +360,14 @@ fieldset legend {
 
     h1 {
         font-size: 2.3rem;
-        margin-top: 0;
+        margin-top: 0rem;
         padding: 0;
     }
 
     .hero h1 {
         font-size: 3rem;
         margin-bottom: 1.8rem;
+        margin-top: 2.5rem;
     }
 
     h2 {
@@ -372,10 +387,6 @@ fieldset legend {
         margin-top: 0.2rem;
     }
 
-    .hero .card {
-        border: 0;
-    }
-
     .card-grid {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
@@ -391,9 +402,11 @@ fieldset legend {
         font-size: 0.9rem;
         letter-spacing: 0.02rem;
     }
+
     #filter-buttons {
         margin-bottom: 0;
     }
+
     #about-inner {
         padding: 1rem;
     }
