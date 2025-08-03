@@ -82,8 +82,9 @@ h1 {
     max-width: 1080px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 2.2rem;
+    padding: 0rem 1.2rem 3rem 1.2rem;
     font-weight: 900;
+    background-color: #FAF9F6;
 }
 #site-intro p {
     letter-spacing: 0.05rem;
@@ -137,13 +138,14 @@ h6 {
 }
 
 .hero {
-    background-image: url("../imgs/placeholder-main.jpg");
+    background-image: url("../imgs/geology-main.jpg");
     min-height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1rem;
 }
 .hero .card {
     border: 0;
@@ -217,7 +219,10 @@ footer a {
     max-width: 1100px;
     margin: 0 auto;
 }
-
+#concept-map {
+    width: 900px;
+    max-width:100%;
+}
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
@@ -367,7 +372,7 @@ fieldset legend {
         padding: 0;
     }
     .hero {
-        background-image: url("../imgs/placeholder-main-mobile.jpg");
+        background-image: url("../imgs/geology-mobile.jpg");
     }
 
     .hero h1 {
@@ -426,4 +431,36 @@ fieldset legend {
 
 hr {
     border: solid 0.2px #99cccc;
+}
+
+/*fade in elements */
+
+.fade-in {
+   opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInZoom ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.slide-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDownFade 0.8s ease-out forwards;
+}
+
+@keyframes slideDownFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
