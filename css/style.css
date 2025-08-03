@@ -20,7 +20,7 @@ body {
 }
 
 .brand {
-    height: 3rem;
+    height: 2.8rem;
 }
 
 main {
@@ -99,12 +99,12 @@ h6 {
 
 .navbar {
     background: #fff;
-    padding: 0.6rem 1rem 0rem 0.6rem;
+    padding: 0.6rem 0.7rem 0rem 0.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 900;
 }
 
