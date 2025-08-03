@@ -171,6 +171,8 @@ footer a {
     width: 100%;
     /* Ensure card fills the grid column */
     box-sizing: border-box;
+    background-color: #FAF9F6;
+    box-shadow: 1px 1px 0.5px lightblue;
 }
 
 #glossary strong {
