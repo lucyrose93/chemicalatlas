@@ -1,6 +1,27 @@
+// Determine minZoom based on window width
+function getMinZoom() {
+  const width = window.innerWidth;
+  if (width < 798) {
+    return 1;   // small screens: less zoomed out
+  } else if (width < 1200) {
+    return 1.5;   // medium screens
+  } else {
+    return 2;   // large screens: allow more zoom out
+  }
+}
+
+// Initialize map with dynamic minZoom
 const map = L.map('map', {
-  minZoom: 2  // minimum zoom level
-}).setView([20, 0], 2);
+  minZoom: getMinZoom(),
+  maxZoom: 8,
+  center: [20, 0],
+  zoom: getMinZoom() + 1 // start zoom just a bit more zoomed in
+});
+
+
+//const map = L.map('map', {
+//  minZoom: 3  // minimum zoom level
+//}).setView([10, 0], 3);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19
