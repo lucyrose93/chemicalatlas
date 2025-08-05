@@ -33,10 +33,6 @@ main {
     margin: 0 auto;
 }
 
-.navbar {
-    margin: 0;
-}
-
 a,
 #viewMapBtn {
     text-decoration: none;
@@ -389,6 +385,8 @@ fieldset legend {
 
     .hero {
         background-image: url("../imgs/geology-mobile.jpg");
+        background-attachment: inherit; 
+        background-position: inherit;
     }
 
     .hero h1 {
