@@ -431,6 +431,10 @@ fieldset legend {
     #filter-buttons {
         margin-bottom: 0;
     }
+    
+    #filters fieldset {
+        width: 80%;
+    }
 
     #about-inner {
         padding: 1rem;

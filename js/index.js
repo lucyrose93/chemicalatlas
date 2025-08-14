@@ -18,7 +18,7 @@ toggleBtn.addEventListener('click', () => {
   const chemicalFilters = document.getElementById('chemicalFilters');
   const scaleFilters = document.getElementById('scaleFilters');
   const approachFilters = document.getElementById('approachFilters');
-  const glossaryFilters = document.getElementById('glossaryFilters');
+//  const glossaryFilters = document.getElementById('glossaryFilters');
 
   let caseStudies = [];
   let glossary = [];
@@ -114,8 +114,8 @@ toggleBtn.addEventListener('click', () => {
 
     createCheckboxFilters(chemicalFilters, 'chemical', uniqueSorted(caseStudies.map(cs => cs.chemical)));
     createCheckboxFilters(scaleFilters, 'scale', uniqueSorted(caseStudies.map(cs => cs.scale)));
-    createCheckboxFilters(approachFilters, 'knowledge', uniqueSorted(caseStudies.map(cs => cs.approach)));
-    createCheckboxFilters(glossaryFilters, 'glossary', uniqueSorted(glossary.map(g => g.term)));
+    createCheckboxFilters(approachFilters, 'approach', uniqueSorted(caseStudies.map(cs => cs.approach)));
+//    createCheckboxFilters(glossaryFilters, 'glossary', uniqueSorted(glossary.map(g => g.term)));
 
     // Attach change event listeners to all checkboxes
     document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
