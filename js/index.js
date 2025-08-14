@@ -44,7 +44,7 @@ toggleBtn.addEventListener('click', () => {
     card.innerHTML = `
       ${thumbnailHtml}
       <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer" style="text-decoration:underline">${cs.title}</a></h3>
-      <p><strong>Chemical:</strong> ${cs.chemical}</p>
+      <p><strong>Chemical(s):</strong> ${cs.chemical}</p>
       <p><strong>Scale:</strong> ${cs.scale}</p>
       <p><strong>Approach:</strong> ${cs.approach}</p>
     `;
