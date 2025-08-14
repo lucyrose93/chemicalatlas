@@ -15,9 +15,9 @@ toggleBtn.addEventListener('click', () => {
 });
     
   const cardsEl = document.getElementById('cards');
-  const topicFilters = document.getElementById('topicFilters');
+  const chemicalFilters = document.getElementById('chemicalFilters');
   const scaleFilters = document.getElementById('scaleFilters');
-  const knowledgeFilters = document.getElementById('knowledgeFilters');
+  const approachFilters = document.getElementById('approachFilters');
   const glossaryFilters = document.getElementById('glossaryFilters');
 
   let caseStudies = [];
@@ -44,9 +44,9 @@ toggleBtn.addEventListener('click', () => {
     card.innerHTML = `
       ${thumbnailHtml}
       <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer" style="text-decoration:underline">${cs.title}</a></h3>
-      <p><strong>Topic:</strong> ${cs.topic}</p>
+      <p><strong>Chemical:</strong> ${cs.chemical}</p>
       <p><strong>Scale:</strong> ${cs.scale}</p>
-      <p><strong>Knowledge Area:</strong> ${cs.knowledge_area}</p>
+      <p><strong>Approach:</strong> ${cs.approach}</p>
     `;
     cardsEl.appendChild(card);
   });
@@ -82,18 +82,18 @@ toggleBtn.addEventListener('click', () => {
 
   // Filter case studies by selected checkboxes (AND logic across groups)
   function filterCaseStudies() {
-    const selectedTopics = getSelectedFilters('topic');
+    const selectedChemicals = getSelectedFilters('chemical');
     const selectedScales = getSelectedFilters('scale');
-    const selectedKnowledge = getSelectedFilters('knowledge');
+    const selectedApproach = getSelectedFilters('approach');
     const selectedGlossary = getSelectedFilters('glossary');
 
     return caseStudies.filter(cs => {
-      const matchTopic = selectedTopics.length === 0 || selectedTopics.includes(cs.topic);
+      const matchChemical = selectedChemicals.length === 0 || selectedChemicals.includes(cs.chemical);
       const matchScale = selectedScales.length === 0 || selectedScales.includes(cs.scale);
-      const matchKnowledge = selectedKnowledge.length === 0 || selectedKnowledge.includes(cs.knowledge_area);
+      const matchApproach = selectedApproach.length === 0 || selectedApproach.includes(cs.approach);
       const matchGlossary = selectedGlossary.length === 0 || selectedGlossary.includes(cs.glossary_term);
 
-      return matchTopic && matchScale && matchKnowledge && matchGlossary;
+      return matchChemical && matchScale && matchApproach && matchGlossary;
     });
   }
 
@@ -112,9 +112,9 @@ toggleBtn.addEventListener('click', () => {
     caseStudies = csData;
     glossary = glossaryData;
 
-    createCheckboxFilters(topicFilters, 'topic', uniqueSorted(caseStudies.map(cs => cs.topic)));
+    createCheckboxFilters(chemicalFilters, 'chemical', uniqueSorted(caseStudies.map(cs => cs.chemical)));
     createCheckboxFilters(scaleFilters, 'scale', uniqueSorted(caseStudies.map(cs => cs.scale)));
-    createCheckboxFilters(knowledgeFilters, 'knowledge', uniqueSorted(caseStudies.map(cs => cs.knowledge_area)));
+    createCheckboxFilters(approachFilters, 'knowledge', uniqueSorted(caseStudies.map(cs => cs.approach)));
     createCheckboxFilters(glossaryFilters, 'glossary', uniqueSorted(glossary.map(g => g.term)));
 
     // Attach change event listeners to all checkboxes

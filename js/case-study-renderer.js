@@ -27,8 +27,8 @@ window.buildCaseStudyHtml = function(cs, includeViewFullScreenBtn = false) {
   return `
     <h2>${cs.title}</h2>
     <p><strong>Location:</strong> ${cs.location}</p>
-    <p><strong>Topic:</strong> ${cs.topic}</p>
-    <p><strong>Knowledge Area:</strong> ${cs.knowledge_area || ''}</p>
+    <p><strong>Chemical:</strong> ${cs.chemical}</p>
+    <p><strong>Approach:</strong> ${cs.approach || ''}</p>
     <p><strong>Scale:</strong> ${cs.scale || ''}</p>
     <p><strong>Source:</strong> ${cs.source || 'N/A'}</p>
 
