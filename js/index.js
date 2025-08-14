@@ -93,7 +93,7 @@ toggleBtn.addEventListener('click', () => {
       const matchApproach = selectedApproach.length === 0 || selectedApproach.includes(cs.approach);
       const matchGlossary = selectedGlossary.length === 0 || selectedGlossary.includes(cs.glossary_term);
 
-      return matchChemical && matchScale && matchApproach && matchGlossary;
+      return matchChemical && matchScale && matchApproach;
     });
   }
 
