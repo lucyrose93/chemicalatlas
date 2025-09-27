@@ -26,7 +26,7 @@ Mapping pollution is more than plotting data on a map. It's about making sense o
 
 ## 🤝 Community of Practice
 
-The project is in its early stages. We held a [workshop](./workshop) on June 6, 2025, at UCL with researchers and journalists to gather ideas from our community of practice. Based on this input, we are currently creating a proof of concept. As the project gains momentum, we welcome expressions of interest from any discipline:
+The project is in its early stages. We held a [workshop](./workshop-materials) on June 6, 2025, at UCL with researchers and journalists to gather ideas from our community of practice. Based on this input, we are currently creating a proof of concept. As the project gains momentum, we welcome expressions of interest from any discipline:
 
 - 🎥 Filmmaker or artist
 - 🧑‍🔬 Natural scientist
