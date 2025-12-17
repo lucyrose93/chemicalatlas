@@ -13,8 +13,9 @@
         ],
         "glossary_term": "Interscalar",
         "coords": [33.9316066, -117.9454867],
-        "source": "Andrew Barry (2025)"
-  },
+        "source": "Andrew Barry (2025)", 
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
+},
     {
         "id": 2,
         "title": "Microplastics toxic to coastal bird [Example]",
@@ -30,7 +31,8 @@
         "video": "./videos/placeholder-coast.mp4",
         "glossary_term": "Microplastic",
         "coords": [-6.4185, 110.8582],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 3,
@@ -48,8 +50,8 @@
         "video": null,
         "glossary_term": "Accumulation",
         "coords": [44.4397, -114.9168],
-        "source": "author (year)"
-
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 4,
@@ -66,7 +68,8 @@
         "video": "./videos/placeholder-smokestack.mp4",
         "glossary_term": "Interscalar",
         "coords": [5.6658, 0.0110],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 5,
@@ -83,7 +86,8 @@
         "video": null,
         "glossary_term": "Toxicity",
         "coords": [37.0983, -6.5414],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 6,
@@ -100,7 +104,8 @@
         "video": "./videos/placeholder-ocean.mp4",
         "glossary_term": "Microplastic",
         "coords": [52.4579, -55.2329],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 7,
@@ -117,7 +122,8 @@
         "video": "./videos/placeholder-factory-night.mp4",
         "glossary_term": "Persistence",
         "coords": [55.4822, 13.2933],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   },
     {
         "id": 8,
@@ -134,7 +140,8 @@
         "video": "./videos/placeholder-mining.mp4",
         "glossary_term": "Interscalar",
         "coords": [-25.6301, -69.5759],
-        "source": "author (year)"
+        "source": "author (year)",
+        "references": "Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal.<br>Author A (2022). Title of report. Publisher. Author B (2020). Article title, Journal."
   }
 
 ]

@@ -68,6 +68,10 @@ window.buildCaseStudyHtml = function(cs, includeViewFullScreenBtn = false) {
     <h3>Analysis</h3>
     <p>${cs.analysis}</p>
 
+    <h3>References</h3>
+    <p>${cs.references}</p>
+    <hr>
+
     ${viewFullScreenBtnHtml}
   `;
 };
