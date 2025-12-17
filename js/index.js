@@ -30,24 +30,47 @@ toggleBtn.addEventListener('click', () => {
 
     function renderCards(items) {
   cardsEl.innerHTML = '';
-  if (items.length === 0) {
+
+  if (!items || items.length === 0) {
     cardsEl.innerHTML = '<p>No case studies match your filters.</p>';
     return;
   }
+
   items.forEach(cs => {
-    const thumbnailHtml = cs.images && cs.images.length > 0
-      ? `<img src="${cs.images[0]}" alt="${cs.title} thumbnail" style="width: 100%; max-height: 210px; object-fit: cover; border-radius: 2px; margin-bottom: 0.2rem;">`
+    let thumbnailSrc = '';
+
+    // Support both old and new image formats
+    if (cs.images && cs.images.length > 0) {
+      if (typeof cs.images[0] === 'string') {
+        thumbnailSrc = cs.images[0];
+      } else if (typeof cs.images[0] === 'object' && cs.images[0].src) {
+        thumbnailSrc = cs.images[0].src;
+      }
+    }
+
+    const thumbnailHtml = thumbnailSrc
+      ? `<img 
+          src="${thumbnailSrc}" 
+          alt="${cs.title} thumbnail" 
+          style="width: 100%; max-height: 210px; object-fit: cover; border-radius: 2px; margin-bottom: 0.2rem;"
+        >`
       : '';
 
     const card = document.createElement('div');
     card.className = 'card';
+
     card.innerHTML = `
       ${thumbnailHtml}
-      <h3><a href="case-study.html?id=${cs.id}" rel="noopener noreferrer" style="text-decoration:underline">${cs.title}</a></h3>
-      <p><strong>Chemical(s):</strong> ${cs.chemical}</p>
-      <p><strong>Scale:</strong> ${cs.scale}</p>
-      <p><strong>Approach:</strong> ${cs.approach}</p>
+      <h3>
+        <a href="case-study.html?id=${cs.id}" rel="noopener noreferrer" style="text-decoration: underline;">
+          ${cs.title}
+        </a>
+      </h3>
+      <p><strong>Chemical(s):</strong> ${cs.chemical || ''}</p>
+      <p><strong>Scale:</strong> ${cs.scale || ''}</p>
+      <p><strong>Approach:</strong> ${cs.approach || ''}</p>
     `;
+
     cardsEl.appendChild(card);
   });
 }

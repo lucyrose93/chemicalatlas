@@ -1,9 +1,37 @@
 window.buildImagesHtml = function(images, title) {
-  if (!images || images.length === 0) return '';
+  if (!Array.isArray(images) || images.length === 0) return '';
+
+  const safeTitle = (title || 'Case study').toString();
+
   let html = '<div class="images">';
-  images.forEach(src => {
-    html += `<img src="${src}" alt="${title} image" style="width: 800px; max-width: 100%; margin-top: 0.8rem">`;
+
+  images.forEach((img, idx) => {
+    let src = '';
+    let caption = '';
+
+    // supports both formats:
+    // images: ["a.jpg"]
+    // images: [{src:"a.jpg", caption:"..."}]
+    if (typeof img === 'string') {
+      src = img;
+    } else if (img && typeof img === 'object') {
+      src = img.src || '';
+      caption = img.caption || '';
+    }
+
+    if (!src) return;
+
+    // simple HTML escaping for captions/titles
+    const esc = (s) =>
+      String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    html +=
+      '<figure style="margin:0 0 0.75rem 0;">' +
+        '<img src="' + esc(src) + '" alt="' + esc(safeTitle) + ' image ' + (idx + 1) + '" style="max-width:100%; margin-bottom:0.25rem;">' +
+        (caption ? '<figcaption style="font-size:0.85rem; color:#666;">' + esc(caption) + '</figcaption>' : '') +
+      '</figure>';
   });
+
   html += '</div>';
   return html;
 };
